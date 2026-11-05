@@ -1,0 +1,99 @@
+# Local Python environments and generated metadata
+.venv/
+venv/
+*.egg-info/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage/
+
+# Locally generated dependency trees and build output
+node_modules/
+.pnpm-store/
+.vite/
+.tanstack/
+*.tsbuildinfo
+/dist/
+/build/
+
+# Private credentials and local service configuration
+.env
+.env.*
+!.env.example
+!**/.env.example
+*.key
+*.pem
+*.ppk
+*.p12
+*.pfx
+/cli-config.yaml
+/config.yaml
+# Also protect credentials if DRUGMATE_HOME is accidentally set to the checkout.
+/auth.json*
+/.anthropic_oauth.json*
+/auth/google_oauth.json*
+/shared/nous_auth.json*
+/gateway.json
+/state.db*
+/.drugmate_history
+/sessions/
+/memories/
+/pairing/
+
+# Research outputs and isolated Drugmate session state
+/.local/
+/.drugmate/
+/data/
+/logs/
+/tmp/
+/wandb/
+/test_durations.json
+/scripts/out/
+/skills/.hub/
+*.log
+
+# Machine-local editor/hosting files and backups
+.DS_Store
+.vscode/
+.idea/
+.openai/
+.codex/
+.cursor/
+.direnv/
+*.bak
+*.bak-*
+*~
+.update-incomplete*
+
+# Scientific source assets and license texts are source files.
+# Do not broadly exclude images/, *.pdb or *.sdf.
+
+# Machine-specific scientific deployment config
+/sbdd-deployment.env
+/skills/bio_research/deployment.local.*
+
+# Large benchmark downloads are distributed separately through Google Drive.
+/memory/bundles/
+/memory/**/drugmate-docking-memory/
+/memory/**/drugmate-generation-memory/
+drugmate-generation-memory.tar.gz*
+drugmate-docking-memory.tar.gz*
+drugmate-generation-memory.zip*
+drugmate-docking-memory.zip*
+agent_memory_generation_v2_20261018/
+agent_memory_split_v1_20261012/
+agent_memory_generation_v2_20261018.tar.gz*
+agent_memory_split_v1_20261012.tar.gz*
+
+# Local cleanup inventories and review notes, retained for the maintainer only.
+/docs/removed-files.txt
+/docs/renamed-files.txt
+/docs/credential-review.md
+# Original benchmark parser supplied for local implementation review.
+# Runtime AutoSite parsing is maintained in the scientific skill adapter.
+/parse_results.py

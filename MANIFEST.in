@@ -1,0 +1,19 @@
+graft skills
+graft locales
+graft memory
+prune memory/bundles
+prune memory/docking_memory/drugmate-docking-memory
+prune memory/generation_memory/drugmate-generation-memory
+global-exclude drugmate-generation-memory.tar.gz* drugmate-docking-memory.tar.gz*
+global-exclude drugmate-generation-memory.zip* drugmate-docking-memory.zip*
+global-exclude .env .env.* deployment.local.*
+exclude sbdd-deployment.env
+include README.md licenses/LICENSE licenses/THIRD_PARTY_NOTICES.md AGENTS.md SOUL.md drugmate environment.yml
+exclude parse_results.py
+recursive-include licenses/viewers *.LICENSE.txt
+recursive-include docs *.md *.txt *.json *.yaml *.yml
+exclude docs/removed-files.txt docs/renamed-files.txt docs/credential-review.md
+recursive-include docs/assets *.png
+global-exclude __pycache__
+global-exclude *.py[cod]
+global-exclude .DS_Store

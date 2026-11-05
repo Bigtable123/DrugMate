@@ -1,0 +1,10 @@
+# Application environment only. Create from the repository root, then install
+# the local Python package as documented in README.md.
+# Scientific tools, CUDA environments and model weights remain separate.
+name: drugmate
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.11
+  - pip
