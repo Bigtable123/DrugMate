@@ -11,6 +11,12 @@ retrieved by embedding similarity. By combining autonomous workflow execution
 with retrievable computational experience, DrugMATE supports evidence-guided
 virtual screening and molecular design.
 
+## Online demo
+
+To use all of DrugMATE's features locally, you'll need to install the required
+scientific tools and download the research memory bundles. To try it out right
+away, visit the [online demo](https://drugmate.org/workspace).
+
 ## Installation
 
 ### 1. Agent environment
